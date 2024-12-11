@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Post Details</title>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-neutral-800 text-white flex justify-between items-center h-16 px-4 md:px-10">
+        <div class="flex items-center space-x-4">
+            <button class="text-2xl">☰</button>
+            <a href="#" class="flex items-center">
+                <img src="image/9a42419e-74ca-4345-8f65-09e8d0b8536f.png" alt="Logo" class="h-8">
+            </a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="index.html" class="hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+            <a href="biodata.html" class="hover:bg-gray-700 px-3 py-2 rounded">Biodata</a>
+            <a href="contact.html" class="hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+            <a href="posts.html" class="hover:bg-gray-700 px-3 py-2 rounded">Posts</a>
+            <a href="galeri.html" class="hover:bg-gray-700 px-3 py-2 rounded">Gallery</a>
+            <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">
+                <img src="image/14b47bc1-3a3a-4448-9b2f-d628557d3cab.png" alt="Cart" class="h-6">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-6">Post Details</h1>
+        <div id="postCard" class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+            <!-- Content will be loaded dynamically here -->
+            <p class="text-center text-gray-500">Loading data...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <!-- Bagian Atas Footer -->
+        <div class="container mx-auto px-4 md:px-10 py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+          <!-- Tentang GoDaddy -->
+          <div>
+            <h3 class="font-semibold mb-4 text-base">Tentang GoDaddy</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-gray-400">Tentang Kami</a></li>
+              <li><a href="#" class="hover:text-gray-400">Karier</a></li>
+              <li><a href="#" class="hover:text-gray-400">Hubungi Kami</a></li>
+              <li><a href="#" class="hover:text-gray-400">Legal</a></li>
+              <li><a href="#" class="hover:text-gray-400">Pusat Kepercayaan</a></li>
+            </ul>
+          </div>
+  
+          <!-- Dukungan -->
+          <div>
+            <h3 class="font-semibold mb-4 text-base">Dukungan</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-gray-400">Dukungan Produk</a></li>
+              <li><a href="#" class="hover:text-gray-400">Laporkan Penyalahgunaan</a></li>
+              <li><a href="#" class="hover:text-gray-400">Sumber Daya</a></li>
+            </ul>
+          </div>
+  
+          <!-- Sumber Daya -->
+          <div>
+            <h3 class="font-semibold mb-4 text-base">Sumber Daya</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-gray-400">Webmail</a></li>
+              <li><a href="#" class="hover:text-gray-400">WHOIS</a></li>
+              <li><a href="#" class="hover:text-gray-400">Katalog Produk</a></li>
+              <li><a href="#" class="hover:text-gray-400">Pembuat Nama Bisnis</a></li>
+            </ul>
+          </div>
+  
+          <!-- Program Mitra -->
+          <div>
+            <h3 class="font-semibold mb-4 text-base">Program Mitra</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-gray-400">Afiliasi</a></li>
+              <li><a href="#" class="hover:text-gray-400">Program Reseller</a></li>
+              <li><a href="#" class="hover:text-gray-400">GoDaddy Pro</a></li>
+            </ul>
+          </div>
+  
+          <!-- Akun -->
+          <div>
+            <h3 class="font-semibold mb-4 text-base">Akun</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-gray-400">Produk Saya</a></li>
+              <li><a href="#" class="hover:text-gray-400">Pembaruan & Penagihan</a></li>
+              <li><a href="#" class="hover:text-gray-400">Buat Akun</a></li>
+            </ul>
+          </div>
+  
+          <!-- Berbelanja -->
+          <div>
+            <h3 class="font-semibold mb-4 text-base">Berbelanja</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-gray-400">Beli domain</a></li>
+              <li><a href="#" class="hover:text-gray-400">Situs Web</a></li>
+              <li><a href="#" class="hover:text-gray-400">Email Bisnis</a></li>
+              <li><a href="#" class="hover:text-gray-400">WordPress</a></li>
+              <li><a href="#" class="hover:text-gray-400">Hosting</a></li>
+              <li><a href="#" class="hover:text-gray-400">Keamanan Web</a></li>
+              <li><a href="#" class="hover:text-gray-400">Pembuat Logo</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Bagian Bawah Footer -->
+        <div class="border-t border-gray-700 py-6">
+          <div class="container mx-auto px-4 md:px-10 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+            <!-- Logo dan Bahasa -->
+            <div class="flex items-center space-x-2">
+              <img src="image/1801b54c-2786-473a-9d85-f6c8cf2eccba.png" alt="GoDaddy Logo" class="h-6">
+              <p>Indonesia - Bahasa Indonesia</p>
+            </div>
+            <!-- Mata Uang -->
+            <p>IDR Rp</p>
+          </div>
+          <div class="text-center mt-4 text-gray-400">
+            <a href="https://fti.unai.edu" class="text-blue-400 hover:underline" target="_blank">FTI UNAI</a> |
+            <a href="https://unai.edu" class="text-blue-400 hover:underline" target="_blank">UNAI Website</a>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        // Fetch API Data
+        fetch('https://jsonplaceholder.typicode.com/posts/47')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Select the postCard container
+                const postCard = document.getElementById('postCard');
+
+                // Populate the card with data
+                postCard.innerHTML = `
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Post ID: ${data.id}</h2>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">${data.title}</h3>
+                    <p class="text-gray-700 text-justify">${data.body}</p>
+                `;
+            })
+            .catch(error => {
+                const postCard = document.getElementById('postCard');
+                postCard.innerHTML = `<p class="text-red-500">Error loading data: ${error.message}</p>`;
+            });
+    </script>
+</body>
+</html>
