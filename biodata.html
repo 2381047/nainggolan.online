@@ -8,44 +8,47 @@
   </head>
   <body class="font-sans bg-gray-100">
     <!-- Navbar -->
-    <nav
-      class="bg-neutral-800 text-white flex justify-between items-center h-16 px-4 md:px-10"
-    >
+    <nav class="bg-neutral-800 text-white flex justify-between items-center h-16 px-4 md:px-10">
       <div class="flex items-center space-x-4">
-        <button class="text-2xl">☰</button>
-        <a href="#" class="flex items-center">
-          <img
-            src="image/9a42419e-74ca-4345-8f65-09e8d0b8536f.png"
-            alt="Logo"
-            class="h-8"
-          />
-        </a>
+          <button class="text-2xl" id="menuButton">☰</button>
+          <a href="#" class="flex items-center">
+              <img src="image/9a42419e-74ca-4345-8f65-09e8d0b8536f.png" alt="Logo" class="h-8">
+          </a>
       </div>
+      <!-- Menu Navigasi -->
+      <div class="flex items-center space-x-6 md:flex hidden" id="navLinks">
+          <a href="index.html" class="hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+          <a href="biodata.html" class="hover:bg-gray-700 px-3 py-2 rounded">Biodata</a>
+          <a href="contact.html" class="hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+          <a href="posts.html" class="hover:bg-gray-700 px-3 py-2 rounded">Posts</a>
+          <a href="freepage.html" class="hover:bg-gray-700 px-3 py-2 rounded">Freepage</a>
+      </div>
+      
+      <!-- Cart tetap di tempat -->
       <div class="flex items-center space-x-6">
-        <a href="index.html" class="hover:bg-gray-700 px-3 py-2 rounded"
-          >Home</a
-        >
-        <a href="biodata.html" class="hover:bg-gray-700 px-3 py-2 rounded"
-          >Biodata</a
-        >
-        <a href="contact.html" class="hover:bg-gray-700 px-3 py-2 rounded"
-          >Contact</a
-        >
-        <a href="posts.html" class="hover:bg-gray-700 px-3 py-2 rounded"
-          >Posts</a
-        >
-        <a href="freepage.html" class="hover:bg-gray-700 px-3 py-2 rounded"
-          >Freepage</a
-        >
-        <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">
-          <img
-            src="image/14b47bc1-3a3a-4448-9b2f-d628557d3cab.png"
-            alt="Cart"
-            class="h-6"
-          />
-        </a>
+          <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">
+              <img src="image/14b47bc1-3a3a-4448-9b2f-d628557d3cab.png" alt="Cart" class="h-6">
+          </a>
       </div>
-    </nav>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="md:hidden w-full bg-neutral-800" id="mobileMenu">
+      <a href="index.html" class="block px-3 py-2 text-white">Home</a>
+      <a href="biodata.html" class="block px-3 py-2 text-white">Biodata</a>
+      <a href="contact.html" class="block px-3 py-2 text-white">Contact</a>
+      <a href="posts.html" class="block px-3 py-2 text-white">Posts</a>
+      <a href="galeri.html" class="block px-3 py-2 text-white">Gallery</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+      // JavaScript untuk toggling menu di versi mobile
+      document.getElementById("menuButton").addEventListener("click", function() {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+      });
+  </script>
 
     <!-- Profile Section -->
     <div class="max-w-4xl mx-auto mt-10 px-4">
@@ -55,7 +58,7 @@
         <!-- Profile Image -->
         <div class="w-full md:w-1/3">
           <img
-            src="image/WhatsApp Image 2024-10-25 at 10.37.54_9253c4a1.jpg"
+            src="image/anjay.jpg"
             alt="Profile Photo"
             class="w-full h-full object-cover"
           />
@@ -64,13 +67,13 @@
         <div class="w-full md:w-2/3 p-6">
           <h1 class="text-3xl font-bold">STEPHAN NAINGGOLAN</h1>
           <ul class="mt-4 space-y-2">
-            <li><span class="font-bold">Name:</span> Stephan Nainggolan</li>
-            <li><span class="font-bold">Student ID (NIM):</span> 2381047</li>
+            <li><span class="font-bold">Name :</span> Stephan Nainggolan</li>
+            <li><span class="font-bold">Student ID (NIM) :</span> 2381047</li>
             <li>
-              <span class="font-bold">Faculty:</span> Information Technology
+              <span class="font-bold">Faculty :</span> Information Technology
             </li>
             <li>
-              <span class="font-bold">Major:</span> Informatics Engineering
+              <span class="font-bold">Major :</span> Informatics Engineering
             </li>
           </ul>
         </div>
@@ -81,8 +84,8 @@
     <div class="max-w-4xl mx-auto mt-10 px-4 bg-white shadow-lg rounded-lg p-6">
       <h2 class="text-2xl font-bold mb-4">Information</h2>
       <ul class="space-y-2">
-        <li><span class="font-bold">Hobbies:</span> Hiking, Play Volleyball</li>
-        <li><span class="font-bold">Skills:</span> HTML, CSS</li>
+        <li><span class="font-bold">Hobbies :</span> Hiking, Play Volleyball</li>
+        <li><span class="font-bold">Skills :</span> HTML, CSS</li>
       </ul>
     </div>
 

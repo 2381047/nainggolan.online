@@ -11,22 +11,45 @@
     <!-- Navbar -->
     <nav class="bg-neutral-800 text-white flex justify-between items-center h-16 px-4 md:px-10">
       <div class="flex items-center space-x-4">
-          <button class="text-2xl">☰</button>
+          <button class="text-2xl" id="menuButton">☰</button>
           <a href="#" class="flex items-center">
               <img src="image/9a42419e-74ca-4345-8f65-09e8d0b8536f.png" alt="Logo" class="h-8">
           </a>
       </div>
-      <div class="flex items-center space-x-6">
+      <!-- Menu Navigasi -->
+      <div class="flex items-center space-x-6 md:flex hidden" id="navLinks">
           <a href="index.html" class="hover:bg-gray-700 px-3 py-2 rounded">Home</a>
           <a href="biodata.html" class="hover:bg-gray-700 px-3 py-2 rounded">Biodata</a>
           <a href="contact.html" class="hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
           <a href="posts.html" class="hover:bg-gray-700 px-3 py-2 rounded">Posts</a>
           <a href="freepage.html" class="hover:bg-gray-700 px-3 py-2 rounded">Freepage</a>
+      </div>
+      
+      <!-- Cart tetap di tempat -->
+      <div class="flex items-center space-x-6">
           <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">
               <img src="image/14b47bc1-3a3a-4448-9b2f-d628557d3cab.png" alt="Cart" class="h-6">
           </a>
       </div>
   </nav>
+
+  <!-- Mobile Nav -->
+  <div class="md:hidden w-full bg-neutral-800" id="mobileMenu">
+      <a href="index.html" class="block px-3 py-2 text-white">Home</a>
+      <a href="biodata.html" class="block px-3 py-2 text-white">Biodata</a>
+      <a href="contact.html" class="block px-3 py-2 text-white">Contact</a>
+      <a href="posts.html" class="block px-3 py-2 text-white">Posts</a>
+      <a href="galeri.html" class="block px-3 py-2 text-white">Gallery</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+      // JavaScript untuk toggling menu di versi mobile
+      document.getElementById("menuButton").addEventListener("click", function() {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+      });
+  </script>
 
     <!-- Registration Form Section -->
     <div class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded-lg shadow-lg">
